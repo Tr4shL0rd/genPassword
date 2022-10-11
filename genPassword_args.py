@@ -36,36 +36,13 @@ class Args:
             action="store_true",
             help="Copy to clipboard"
         )
-        # parser.add_argument(
-        #     "--fullcase",
-        #     action="store_true",
-        #     default=False,
-        #     dest="use both upper and lower case"
-        # )
-        # parser.add_argument(
-        #     "--lowercase",
-        #     action="store_false",
-        #     default=False,
-        #     dest="use lowercase"
-        # )
-        # parser.add_argument(
-        #     "--uppercase",
-        #     action="store_false",
-        #     default=False,
-        #     dest="use uppercase"
-        # )
-        # parser.add_argument(
-        #     "--digits",
-        #     action="store_false",
-        #     default=False,
-        #     dest="use digits"
-        # )
-        # parser.add_argument(
-        #     "--symbols",
-        #     action="store_false",
-        #     default=False,
-        #     dest="use symbols"
-        # )
+        parser.add_argument(
+            "--strength",
+            dest="strength",
+            action="store_true",
+            help="returns the strength of the generated password strength"
+        )
+        
         
         args = parser.parse_args()
         return args
