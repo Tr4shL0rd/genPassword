@@ -14,7 +14,7 @@ class Args:
             action="store",
             type=int,
             default=12,
-            help="Length of password",
+            help="Length of password [default=12]",
         )
 
         parser.add_argument(
